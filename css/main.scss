@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,500&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: "Archivo";
+}
+p   {
+  font-size: 0.9em;  
+  line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+.container {
+    text-align: center;
+    padding: 1em 1em;    
+}
+
+.logo {
+    width: 210px;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.menu {
+    width: 30px;
+    margin-top: 20%;
+}
+
+nav ul {
+    position: fixed;
+    width: 40%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: #EEE1C8;
+    height: 100%;
+    z-index: 10;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: #004614;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;    
+    background-color: #eed7ac;
+}
+
+nav ul li a:hover {
+    background-color: #faeed9;
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -2.3em;
+    text-align: right;
+    padding: 0 0.6em;
+}
+
+.exit-btn img {
+    cursor: pointer;
+    width: 15px;
+}
+
+@media only screen and (min-width: 830px) {
+
+        .show-desktop {
+            display: block;
+            margin: 0 auto 13% auto;
+        }
+        .hide-desktop {
+            display: none;
+        }
+        nav ul {
+            position: inherit;
+            width: auto;
+            background: none;
+            height: auto;
+            display: flex;
+            padding-top: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a{
+            color: black;
+            background-color: inherit;
+            text-align: right;
+            padding: 1em 2em;
+        }
+        nav ul li a:hover {
+            background-color: inherit;
+        }
+}
